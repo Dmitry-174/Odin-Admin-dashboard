@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 3.5fr;
+    grid-template-rows: 180px 1fr;
+}
+
+header {
+    background-color: aqua;
+}
+
+aside {
+    background-color: chartreuse;
+    grid-row: 1 / 3;
+}
+
+main {
+    background-color: fuchsia;
+    height: 500px;
+}
