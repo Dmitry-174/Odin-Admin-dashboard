@@ -39,8 +39,7 @@ aside {
 }
 
 main {
-    background-color: fuchsia;
-    height: 500px;
+    background-color: rgb(169, 221, 71);
 }
 
 aside a {
@@ -74,8 +73,6 @@ li svg {
 li svg path,
 .logo svg path {
     fill: #FFFFFF;
-    height: 1rem;
-    width: 1rem;
 }
 
 .logo svg {
@@ -185,4 +182,40 @@ header form button {
     justify-content: end;
     gap: 1rem;
     padding: 0 1rem 0 2.75rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1rem;
+    grid-column: 1 / -1;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 0.875rem;
+}
+
+.project-desc {
+    font-size: 0.75rem;
+    color: #636363;
+}
+
+.activities svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.activities svg path {
+    fill: #333333;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
 }
