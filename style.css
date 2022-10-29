@@ -39,7 +39,7 @@ aside {
 }
 
 main {
-    background-color: rgb(169, 221, 71);
+    background-color: #e2e8f0;
 }
 
 aside a {
@@ -191,7 +191,7 @@ h1 {
     padding-bottom: 1rem;
 }
 
-h2 {
+.card h2 {
     font-weight: 900;
     font-size: 0.875rem;
     padding-bottom: 0.25rem;
@@ -214,9 +214,15 @@ h2 {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding-left: 2.75rem;
     padding-bottom: 2rem;
+    padding-right: 1rem;
     column-gap: 1.375rem;
+}
+
+.content {
+    grid-row: 1 / -1;
 }
 
 .projects {
@@ -243,12 +249,78 @@ main {
     gap: 1rem;
 }
 
-.projects-header {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.announcement-card h2 {
+    font-weight: 900;
+    font-size: 0.65rem;
+    padding: 0 0.4rem 0.25rem;
 }
 
-.announcements-header{
-    grid-column: 2 / -1;
-    grid-row: 1 / 2;
+.announcement-desc {
+    font-size: 0.5625rem;
+    color: #636363;
+    padding: 0 0.4rem;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0.78rem;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    flex: 1;
+}
+
+hr {
+    height: 1px;
+    background-color: #d2d2d2;
+    border-style: none;
+}
+
+
+.trend-user {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 1fr;
+    gap: 0.25rem 1.25rem;
+}
+
+.trend-user img {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 1.5625rem;
+    grid-row: 1 /-1;
+}
+
+.trend-user p {
+    font-size: 0.65rem;
+}
+
+.trend-user-name {
+    align-self: end;
+}
+
+.user-project {
+    color: #636363;
+    align-self: start;
+}
+
+.trending-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.78rem;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
 }
